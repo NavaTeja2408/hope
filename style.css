@@ -44,6 +44,7 @@ a{
     object-fit: cover;
     width: 100%;
     height: 100%;
+    opacity: 1.5;
 }
 
 .text_box {
@@ -160,7 +161,7 @@ a{
 
 .second_section {
     width: 100%;
-    height: 65vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -174,26 +175,31 @@ a{
 }
 
 .second_section_container {
-    width: 80%;
+    width: 90%;
     display: flex;
+    align-items: start;
+    justify-content: center;
     gap: 10px;
+    margin-bottom: 2rem;
 }
 
 .second-section_first {
-    width: 60%;
+    width: 40%;
     height: 70%;
     display: flex;
     flex-direction: column;
     gap: 18px;
+    font-size: 18px;
+    line-height: 2;
     animation: scrollMotion 4s linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 60% ;
+    animation-range: entry 10% cover 45% ;
 }
 
 @keyframes scrollMotion {
     from {
         opacity: 0;
-        transform: translateY(-150%);
+        transform: translateY(-50%);
     }
     to {
         opacity: 1;
@@ -214,7 +220,7 @@ a{
 
 
 .second_section_second {
-    width: 40%;
+    width: 50%;
     height: 70%;
     position: relative;
     margin-left: 30px;
@@ -222,20 +228,20 @@ a{
 
 .image-1 {
     width: 37%;
-    height: 150px;
+    height: 170px;
     position:  absolute;
     right: 3%;
-    top: 10%;
+    top: 11%;
     transform: rotate(10deg); 
     z-index: 100;
     animation: scrollImage1 4s linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 60% ;
+    animation-range: entry 0% cover 35% ;
  
 }
 .image-2 {
     width: 37%;
-    height: 150px;
+    height: 170px;
     position:  absolute;
     left: 0;
     top: 14%;
@@ -243,11 +249,11 @@ a{
     transform: rotate(-10deg); 
     animation: scrollImage2 4s linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 60% ;
+    animation-range: entry 0% cover 35% ;
 }
 .image-3 {
     width: 37%;
-    height: 150px;
+    height: 170px;
     position:  absolute;
     left: 27%;
     top: 7%;
@@ -268,7 +274,7 @@ a{
 @keyframes scrollImage2 {
     from {
         opacity: 1;
-        transform: translate(-40%, -85%);
+        transform: translate(-40%, -70%);
     }
     to {
         opacity: 1;
@@ -278,7 +284,7 @@ a{
 
 .third_section {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     background-image: url('./image6.jpeg');
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center top -5px;
@@ -301,8 +307,8 @@ a{
 }
 
 .form_section {
-    width: 55%;
-    height: 88%;
+    width: 45%;
+    height: 80%;
     background-color: white;
     border-radius: 25px;
     padding: 3%;
@@ -317,8 +323,9 @@ a{
 .form_section h2 {
     width: 95%;
     color: #3D2A44;
-    font-size: 24px;
+    font-size: 22px;
     text-align: center;
+    margin-bottom: 1rem;
 
 }
 
@@ -547,7 +554,7 @@ a{
 
     .second_section {
         width: 100%;
-        height: 60vh;
+        height: 90vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -559,7 +566,9 @@ a{
     .second_section h2 {
         color: #3D2A44;
         font-size: 28px;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
+        overflow: hidden;
+        padding-bottom: 5px;
     }
     
     .second_section_container {
@@ -585,7 +594,9 @@ a{
     
     
     .second-section_first p {
-        font-size: 14px;
+        margin-top: 1.5rem;
+        font-size: 18px;
+        line-height: 2;
         opacity: 0;
         transform: translateY(30px);
         transition: opacity 0.8s ease-out, transform 0.8s ease-out;
@@ -626,30 +637,33 @@ a{
     
     .image-1 {
         width: 30%;
-        height: 60%;
+        height: 70%;
         position:  absolute;
-        right: 10%;
-        top: 5%;
+        right: 8%;
+        top: 13%;
         z-index: 100;
         rotate: 0;
+        transform: rotate(3deg); 
      
     }
     .image-2 {
-        width: 33%;
-        height: 60%;
+        width: 30%;
+        height: 70%;
         position:  absolute;
-        left: 0;
-        top: 5%;
+        left: 6%;
+        top: 13%;
         rotate: 0;
+        transform: rotate(-3deg); 
+
     
     
     }
     .image-3 {
-        width: 33%;
-        height: 60%;
+        width: 30%;
+        height: 70%;
         position:  absolute;
-        left: 30%;
-        top: 5%;
+        left: 33%;
+        top: 10%;
         z-index: 50;
         rotate: 0;
     }
@@ -666,7 +680,7 @@ a{
     }
     
     .form_section {
-        width: 90%;
+        width: 80%;
         height: 80%;
         background-color: white;
         border-radius: 25px;
@@ -920,7 +934,7 @@ a{
 
 .second_section {
     width: 100%;
-    height: 80vh;
+    height: 96vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -933,6 +947,8 @@ a{
     color: #3D2A44;
     font-size: 24px;
     margin-bottom: 2rem;
+
+    
 }
 
 .second_section_container {
@@ -945,7 +961,7 @@ a{
 
 .second-section_first {
     width: 100%;
-    height: 50%;
+    height: 55%;
     display: flex;
     flex-direction: column;
     padding-left: 10px;
@@ -956,7 +972,7 @@ a{
 
 
 .second-section_first p {
-    font-size: 14px;
+    font-size: 16px;
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
@@ -990,37 +1006,40 @@ a{
 
 
 .second_section_second {
-    width: 90%;
-    height: 40%;
+    width: 95%;
+    height: 45%;
     position: relative;
 }
 
 .image-1 {
-    width: 33%;
+    width: 30%;
     height: 60%;
     position:  absolute;
     right: 8%;
     top: 5%;
     z-index: 100;
     rotate: 0;
+    transform: rotate(3deg); 
  
 }
 .image-2 {
-    width: 33%;
+    width: 30%;
     height: 60%;
     position:  absolute;
-    left: 0;
+    left: 6%;
     top: 5%;
     rotate: 0;
+    transform: rotate(-3deg); 
+
 
 
 }
 .image-3 {
-    width: 33%;
+    width: 30%;
     height: 60%;
     position:  absolute;
-    left: 27%;
-    top: 5%;
+    left: 33%;
+    top: 4%;
     z-index: 50;
     rotate: 0;
 }
