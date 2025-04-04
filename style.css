@@ -1041,6 +1041,8 @@ a{
     background-color: white;
     border-radius: 25px;
     padding: 3%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
