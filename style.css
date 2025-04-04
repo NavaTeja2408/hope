@@ -22,6 +22,10 @@ a{
     color: black;
 }
 
+a:hover {
+    color: rgba(62, 62, 211, 0.889);
+}
+
 
 
 .logo {
@@ -402,7 +406,7 @@ a{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    margin-top: 15px;
+    margin-top: 7px;
 }
 
 /* Show tick when checked */
@@ -560,6 +564,9 @@ a{
         margin-bottom: 1rem;
         overflow: hidden;
         padding-bottom: 5px;
+        animation: fadeInS2 1s ease-out forwards;
+        animation-timeline: view();
+        animation-range: entry 0% cover 45% ;
     }
     
     .second_section_container {
@@ -581,7 +588,25 @@ a{
         padding-right: 10px;
     
         gap: 5px;
+        animation: fadeInS2 1s ease-out forwards;
+        animation-timeline: view();
+        animation-range: entry 0% cover 45% ;
+    
     }
+
+    @keyframes fadeInS2 {
+        from {
+            opacity: 0;
+            transform: scale(0.8);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    
+
+    
     
     
     .second-section_first p {
@@ -762,7 +787,7 @@ a{
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        margin-top: 15px;
+        margin-top: 3px;
     }
     
     /* Show tick when checked */
@@ -795,9 +820,9 @@ a{
 
 .container {
     background-color: #F7FBE2;
-    margin-top: 4%;
+    margin-top: 5%;
     width: 100%;
-    height: 26vh;
+    height: 24vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -814,7 +839,7 @@ a{
 
 .first_section_conatiner {
     width: 100%;
-    height: 75vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -868,7 +893,7 @@ a{
 }
 .bounce_conatiner {
     width: 100%;
-    height: 25vh;
+    height: 18vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -927,6 +952,10 @@ a{
     font-size: 24px;
     margin-bottom: 1rem;
 
+    animation: fadeInS2 1s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45% ;
+
     
 }
 
@@ -938,15 +967,31 @@ a{
 
 }
 
+
+
 .second-section_first {
     width: 100%;
-    height: 60%;
+    height: 65%;
     display: flex;
     flex-direction: column;
     padding-left: 7px;
     padding-right: 7px;
 
     gap: 4px;
+    animation: fadeInS2 1s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45% ;
+}
+
+@keyframes fadeInS2 {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 
@@ -986,39 +1031,40 @@ a{
 
 .second_section_second {
     width: 95%;
-    height: 40%;
+    height: 35%;
     position: relative;
 }
 
 .image-1 {
-    width: 30%;
-    height: 60%;
+    width: 35%;
+    height: 70%;
     position:  absolute;
-    right: 8%;
+    right: 3%;
     top: 5%;
     z-index: 100;
     rotate: 0;
-    transform: rotate(3deg); 
+    transform: rotate(0deg); 
  
 }
 .image-2 {
-    width: 30%;
-    height: 60%;
+    width: 35%;
+    height: 70%;
     position:  absolute;
-    left: 6%;
+    left: 0%;
     top: 5%;
+    z-index: 100;
     rotate: 0;
-    transform: rotate(-3deg); 
+    transform: rotate(0deg); 
 
 
 
 }
 .image-3 {
-    width: 30%;
-    height: 60%;
+    width: 35%;
+    height: 70%;
     position:  absolute;
-    left: 33%;
-    top: 4%;
+    left: 30%;
+    top: 5%;
     z-index: 50;
     rotate: 0;
 }
@@ -1041,8 +1087,8 @@ a{
     background-color: white;
     border-radius: 25px;
     padding: 3%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1120,7 +1166,7 @@ a{
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    width: 20px;
+    width: 25px;
     height: 15px;
     border: 1px solid gray;
     border-radius: 4px;
@@ -1129,7 +1175,7 @@ a{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    margin-top: 15px;
+    margin-top: 2px;
 }
 
 /* Show tick when checked */
