@@ -1118,8 +1118,8 @@ a{
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    width: 15px;
-    height: 10px;
+    width: 20px;
+    height: 15px;
     border: 1px solid gray;
     border-radius: 4px;
     background-color: white;
